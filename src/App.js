@@ -19,10 +19,8 @@ function App() {
           <Route path='/courses' element={<Courses />} />
           <Route path='/register' element={<Register />} />
           <Route path='/contact' element={<Contact/>} />
-
         </Routes>
       </Router>
-     
     </div>
   );
 }

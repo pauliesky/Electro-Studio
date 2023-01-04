@@ -1,47 +1,30 @@
-import React, { useState } from 'react'
-import styles from './Styles/navbar.module.css'
-import { Link } from 'react-router-dom';
+import  './Styles/navbar.css'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 function Navbar() {
+  // https://drive.google.com/uc?export=view&id=1xRYIQhqpS6QagwZ_PfyApp6SLrwpEviM
+  // https://drive.google.com/file/d//view?usp=sharing
+  const [mobile, setMobile] = useState(false)
 
-  const [click, setClick] = useState(false)
-
-  const handleClick = () => {
-    setClick(!click)
-  }
-
-  const closeMobileMenu = () => {
-    setClick(false)
-  } 
   return (
     <>
-      <nav className={styles.navbar}>
-        <div className={styles.navbar_container}>
-          <Link to='/' className={styles.navbar_name}>ELETROLAB STUDIO </Link>
-          <div className='menu-icon' onClick={handleClick} >
-            <i className={click ? 'fas fa-times' : 'fa fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>HOME</Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/products' className='nav-links' onClick={closeMobileMenu}> PRODUCTS</Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/courses' className='nav-links' onClick={closeMobileMenu}> COURSES</Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/register' className='nav-links' onClick={closeMobileMenu}> REGISTER</Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/contact' className='nav-links' onClick={closeMobileMenu}> CONTACT</Link>
-            </li>
-          </ul>
-        </div>
+      <nav className="navbar">
+        <div><Link to='/'><h3 className="logo"> ELECTRO LAB</h3></Link></div>
+        <ul className={mobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setMobile(false)}>
+          <Link to='/' className='text-link' ><li>HOME</li></Link>
+          <Link to='/products' className='text-link'><li>PRODUCTS</li></Link>
+          <Link to='/courses' className='text-link'><li>COURSES</li></Link>
+          <Link to='/register' className='text-link'><li>REGISTER</li></Link>
+          <Link to='/contact' className='text-link'><li>CONTACT</li></Link>
+        </ul>
+        <button className="mobile-menu-icon" onClick={() => setMobile(!mobile)}>
+          {mobile ? <FaTimes /> : <FaBars />}
+        </button>
       </nav>
     </>
   )
 }
 
-export default Navbar;
+export default Navbar
