@@ -1,17 +1,16 @@
 import React from 'react'
-import videoBG from '../Images/course-video.mp4'
 import '../Styles/Home.css'
-
+import videoBG from '../Images/course-video.mp4'
 
 
 
 function Home() {
   return (
     <div className='home'>
-      <div className="overlay"></div>
-      <video src={videoBG} autoPlay loop muted />
       <div className='content'>
-        <h1>WELCOME</h1>
+        <h1>Home</h1>
+        <div className="overlay"></div>
+        <video src={videoBG} autoPlay loop muted />
       </div>
     </div>
   )

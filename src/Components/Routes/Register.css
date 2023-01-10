@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.register {
+  /* text-align: center; */
+  /* border: 1px solid black; */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-img img {
+  height: 40.1rem;
+  width: 40rem;
+  margin-left: -10rem;
+  border-radius: 20px 0px 0px 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.register-container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  width: 80rem;
+  gap: 12rem;
+  border-radius: 20px;
+}
+input {
+  height: 2rem;
+  margin: 0 0 2rem 0;
+  border-radius: 10px;
+}
+.form h2 {
+  margin-top: -4rem;
+}
+.btn {
+  border: 1px solid black;
+  width: 18rem;
+  height: 2rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(49, 92, 58);
+  color: white;
+}
+.pass {
+  margin: 0 0 0px 0;
+}
+.register-footnote .TC {
+  margin: 0 0 2rem .5rem;
+}
+.ckbx{
+  position: relative;
+  top: 10px;
+  right: 8px;
+  width: 1rem;
+}
