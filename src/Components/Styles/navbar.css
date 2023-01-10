@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
 
 * {
   padding: 0;
@@ -22,6 +23,24 @@ li {
   position: fixed;
   width: 100%;
   /* background-color: red; */
+  padding: 0 5rem 0 5rem;
+}
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin-top: 2rem;
+}
+
+.bg-video {
+  z-index: -1;
 }
 
 .logo {
@@ -29,7 +48,10 @@ li {
   /* height: 5rem; */
   /* padding-top: 5px; */
   /* text-align: center; */
+  color: white;
   cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
 }
 .text-link {
   text-decoration: inherit;
@@ -43,13 +65,13 @@ li {
 
 .nav-links li {
   /* color: rgb(255, 255, 255); */
-  color: white;
-  font-size: 12px;
+  color: orange;
+  font-size: 16px;
   padding: 0 9.08px;
   margin: 0 10px;
   cursor: pointer;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 button {

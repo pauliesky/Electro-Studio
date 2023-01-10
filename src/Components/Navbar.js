@@ -10,8 +10,8 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
-        <div><Link to='/'><h3 className="logo"> ELECTRO LAB</h3></Link></div>
+      <nav className="navbar glass">
+        <div><Link to='/' style={{ textDecoration: 'none' }}><h3 className="logo"> ELECTRO LAB STUDIO</h3></Link></div>
         <ul className={mobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setMobile(false)}>
           <Link to='/' className='text-link' ><li>HOME</li></Link>
           <Link to='/products' className='text-link'><li>PRODUCTS</li></Link>
