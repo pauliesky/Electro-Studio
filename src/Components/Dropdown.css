@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.dropdown-menu {
+  width: 200px;
+  position: relative;
+  top: 180px;
+  list-style: none;
+  text-align: start;
+  /* right: 100px; */
+}
+
+.dropdown-menu{
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover{
+  background-color: aquamarine;
+}
+
+.dropdown-menu.clicked{
+  display: none;
+  /* right: 100px; */
+}
+
+.dropdown-link{
+  display: block;
+  width: 10rem;
+  height: 5rem;
+  text-decoration: none;
+  color: white;
+  /* padding: 10px; */
+}

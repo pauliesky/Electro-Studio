@@ -6,6 +6,8 @@ import Products from './Components/Routes/Products'
 import Courses from './Components/Routes/Courses'
 import Register from './Components/Routes/Register'
 import Contact from './Components/Routes/Contact'
+import Login from './Components/Routes/Login';
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/login' element={<Login/>} />
           <Route path='/products' element={<Products />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/register' element={<Register />} />
